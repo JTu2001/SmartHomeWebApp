@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "node": "^21.0.0"
+  },
+  "name": "smarthomewebapp",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JTu2001/SmartHomeWebApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JTu2001/SmartHomeWebApp/issues"
+  },
+  "homepage": "https://github.com/JTu2001/SmartHomeWebApp#readme"
+}
