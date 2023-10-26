@@ -15,7 +15,7 @@ describe('Express App', function () {
       });
   });
 
-  it('Should return "28,5°C" when "/getTemperature" is called', function (done) {
+  it('Should return "25,5°C" when "/getTemperature" is called', function (done) {
     chai.request(app)
       .get('/getTemperature')
       .end((err, res) => {
