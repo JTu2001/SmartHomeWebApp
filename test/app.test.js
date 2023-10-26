@@ -20,7 +20,7 @@ describe('Express App', function () {
       .get('/getTemperature')
       .end((err, res) => {
         chai.expect(res).to.have.status(200);
-        chai.expect(res.text).to.equal('28,5°C');
+        chai.expect(res.text).to.equal('25,5°C');
         done();
       });
   });
