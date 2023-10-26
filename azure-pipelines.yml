@@ -17,8 +17,10 @@ steps:
 
 - script: |
     npm install
+    npm run build
     npm test
-  displayName: 'npm test'
+    npm run deploy
+  displayName: 'npm build/test/deploy'
 
 - task: PublishTestResults@2
   inputs:
