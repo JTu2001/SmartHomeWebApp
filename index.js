@@ -9,7 +9,7 @@ app.get('/getVoltage', (req, res) => {
 });
 
 app.get('/getTemperature', (req, res) => {
-    res.send('25,5°C');
+    res.send('28,5°C');
 });
 
 const server = app.listen(port, () => {
