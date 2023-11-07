@@ -17,5 +17,11 @@ steps:
 
 - script: |
     npm install
-    npx mocha
+    npx mocha —reporter xunit --reporter-option output=report.xm/
   displayName: 'npm install and build'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    failTaskOnFailedTests: true
