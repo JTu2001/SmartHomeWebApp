@@ -12,7 +12,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test --reporter mocha-junit-reporter --reporter-options mochaFile=./test/test-results/test.xml"
+    "start": "node index",
+    "test": "mocha test --reporter mocha-junit-reporter --reporter-options mochaFile=./test/test-results/test.xml",
+    "deploy": "webpack --mode production && deploy-to-server"
   },
   "repository": {
     "type": "git",

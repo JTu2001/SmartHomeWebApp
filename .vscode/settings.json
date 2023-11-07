@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/5be317d1-ce90-47cb-8ab6-2bbe753aa639/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/smarthomewebapptunjic",
+    "appService.deploySubpath": "."
+}
