@@ -17,5 +17,11 @@ steps:
 
 - script: |
     npm install
-    npm run build
+    npx mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./test/test-results/test.xml
   displayName: 'npm install and build'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/test.xml'
+    failTaskOnFailedTests: true
