@@ -16,9 +16,8 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm run build
+    npm install
     npx mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./test/test-results/test.xml
-    npm run deploy
   displayName: 'build'
 
 - task: PublishTestResults@2
