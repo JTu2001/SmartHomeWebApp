@@ -20,3 +20,8 @@ steps:
     npx mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./test/test-results/test.xml
   displayName: 'build'
 
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/test.xml'
+    failTaskOnFailedTests: true
