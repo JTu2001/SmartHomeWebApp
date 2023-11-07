@@ -17,7 +17,6 @@ steps:
 
 - script: |
     npm instal
-    npx mocha --reporter mocha-junit-reporter --reporter-options mochaFile=./test/test-results/test.xml
   displayName: 'build'
 
 - task: PublishTestResults@2
