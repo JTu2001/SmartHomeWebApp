@@ -13,8 +13,7 @@
   "scripts": {
     "start": "node index",
     "test": "mocha test --reporter mocha-junit-reporter --reporter-options mochaFile=./test/test-results/test.xml",
-    "deploy": "webpack --mode production && deploy-to-server",
-    "build": "node index.js"
+    "deploy": "webpack --mode production && deploy-to-server"
   },
   "repository": {
     "type": "git",
