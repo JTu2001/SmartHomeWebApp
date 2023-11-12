@@ -18,11 +18,9 @@ steps:
     npm install
   displayName: 'npm install and build'
 
-
-- task: AzureRmWebAppDeployment@4
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
     azureSubscription: 'Azure for Students(5be317d1-ce90-47cb-8ab6-2bbe753aa639)'
-    appType: 'webApp'
-    WebAppName: webapptunjic
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    appType: 'webAppLinux'
+    appName: 'webapptunjic'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
