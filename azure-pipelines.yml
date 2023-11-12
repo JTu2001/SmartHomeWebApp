@@ -17,10 +17,11 @@ steps:
 
 - script: |
     npm install 
-    npx mocha
+    npm run test
   displayName: 'npm install and build'
 
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
+    failTaskOnFailedTests: true
     testResultsFiles: '**/test.xml'
