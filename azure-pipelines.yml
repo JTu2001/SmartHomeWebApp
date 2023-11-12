@@ -17,7 +17,7 @@ steps:
 
 - script: |
     npm install 
-    npm run test
+    npx mocha
   displayName: 'npm install and build'
 
 - task: PublishTestResults@2
