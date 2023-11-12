@@ -17,4 +17,5 @@ steps:
 
 - script: |
     npm install
+    npx mocha --reporter mocha-junit-reporter --reporter-options mochaFile='./test/test-results/test.xml'
   displayName: 'npm install and build'
